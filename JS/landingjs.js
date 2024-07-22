@@ -12,7 +12,7 @@ document.getElementById('uploadForm').addEventListener('submit', function (event
     const formData = new FormData();
     formData.append('file', file);
 
-    fetch('YOUR_API_GATEWAY_ENDPOINT', {
+    fetch('https://v83juolvqh.execute-api.us-east-1.amazonaws.com/ImportCsv/Tester', {
         method: 'POST',
         body: formData
     })
